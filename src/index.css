@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+body {
+  background-color: #fff;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent 0 3px,
+    #e2e2e2 6px 8px
+  );
+}
+
+@font-face {
+  font-family: clock;
+  src: url(../digital-clock.ttf);
+}
+
+@theme {
+  --font-clock: "clock", sans-serif;
+}
