@@ -1,5 +1,6 @@
 import Clock from "./Clock";
 import Orb from "./Orb";
+import SDslot from "./SDslot";
 
 export default function BottomBar() {
   return (
@@ -11,20 +12,30 @@ export default function BottomBar() {
         aria-hidden="true"
       >
         <path
-          d="M0,-20 C120,-20 180,38 220,66 C260,115 740,115 780,66 C820,38 880,-20 1000,-20 V190 H0 Z"
-          className="fill-wii-bar stroke-wii-blue dark:fill-neutral-300"
-          strokeWidth="3"
+          d="M0,0 C120,0 180,38 220,66 C260,125 740,125 780,66 C820,38 880,0 1000,0 V190 H0 Z"
+          className="fill-wii-bar dark:fill-neutral-300"
+        />
+        <path
+          d="M0,0 C120,0 180,38 220,66 C260,125 740,125 780,66 C820,38 880,0 1000,0"
+          fill="none"
+          className="stroke-[#60cdff] dark:stroke-[#60cdff]"
+          strokeWidth="4"
           vectorEffect="non-scaling-stroke"
         />
       </svg>
 
-      <Orb side="left" label="Wii menu">
-        Wii
-      </Orb>
+        <a href="https://github.com/julietasegovia" target="_blank">
+            <Orb side="left" label="Wii menu">
+                Mii
+            </Orb>
+        </a>
+      <SDslot />
       <Clock />
-      <Orb side="right" label="Messages">
-        ✉
-      </Orb>
+      <a href="https://github.com/julietasegovia/wiimouse" target="_blank">
+        <Orb side="right" label="Messages">
+            WiiMote
+        </Orb>
+      </a>
     </footer>
   );
 }

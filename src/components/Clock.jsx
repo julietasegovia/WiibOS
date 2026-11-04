@@ -11,7 +11,7 @@ export default function Clock() {
       <div className="font-clock text-[clamp(48px,8vw,80px)] tracking-[0.05em]">
         {hours}:{minutes}
       </div>
-      <div className="mt-10 text-3xl font-semibold">
+      <div className="mt-10 text-5xl font-semibold">
         {weekday} {d.getMonth() + 1}/{d.getDate()}
       </div>
     </div>
