@@ -26,7 +26,7 @@ export default function BottomBar() {
 
         <a href="https://github.com/julietasegovia" target="_blank">
             <Orb side="left" label="Wii menu">
-                Mii
+                Mii (Juli)
             </Orb>
         </a>
       <SDslot />
